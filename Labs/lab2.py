@@ -15,31 +15,38 @@ class Types_and_Strings:
 
         #
         # Enter your own print statements below:
-        #
+        mystatment=("Hello World")
 
         # print only first and last of the sentence:
-
+        print(mystatment[0])
+        print(mystatment[-1])
 
         # use slice notation:
-
+        print(mystatment[2:8])
 
         # escaping a character:
-
+        print("he said \"that’s fantastic\"")
 
         # find all a's in the input word and count how many there are:
-
+        print(message.find('a'))
+        print(message.count('a'))
+        print(message.count('',0,-1))
 
         # replace all occurences of the character a with the - sign
         # try this first by assignment of a location in a string and
         # observe what happens, then use replace():
+        print(message)
+        print(message.replace("a","-"))
+
 
 
     def play_with_lists(self):
         message = input("Please enter a whole sentence: ")
         print("Originally entered: "+ message)
 
-        # hand the input string to a list and print it out:
 
+        # hand the input string to a list and print it out:
+        print(message.split())
 
         # append a new element to the list and print:
 
@@ -61,5 +68,5 @@ class Types_and_Strings:
 
 
 tas = Types_and_Strings()
-tas.play_with_strings()
-#tas.play_with_lists()
+#tas.play_with_strings()
+tas.play_with_lists()
