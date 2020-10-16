@@ -49,7 +49,19 @@ class WordCloud:
     # returns a dictionary
     def create_dict(self):
         my_dict = {}
-        # your code goes here:
+        f = open("gettisburg.txt", "r")
+        for line in f:
+            word = line.split()
+
+            if word in my_dict:
+                my_dict[word] += 1
+
+            else:
+                my_dict[word] = 1
+
+            print(my_dict)
+
+            f.close()
 
         return my_dict
 
